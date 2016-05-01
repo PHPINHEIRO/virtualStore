@@ -1,0 +1,21 @@
+{
+  "name": "virtualStore",
+  "authors": [
+    "Pedro Henrique <phgp25@gmail.com>"
+  ],
+  "description": "um projeto voltado para o estudo dos frameworks django e  material design lite",
+  "main": "app.js",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.1.3"
+  }
+}
