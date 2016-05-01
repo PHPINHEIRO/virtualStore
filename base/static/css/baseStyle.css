@@ -1,3 +1,18 @@
 .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
   padding-right: 0;
 }
+
+.base
+{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.imagem
+{
+  width: 300px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
