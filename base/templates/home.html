@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 {% load static %}
 <html lang="pt-br">
 <head>
@@ -6,150 +6,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="{% static 'bower_components/material-design-lite/material.min.css'%}" rel="stylesheet" />
 	<script src="{% static 'bower_components/material-design-lite/material.min.js'%}" type="text/javascript" ></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
     <link href="{% static 'css/baseStyle.css'%}" rel="stylesheet" />
     <title>Virtual Store</title>
 </head>
 <body>
-<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header mdl-layout__header--waterfall">
     <!-- Top row, always visible -->
     <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Title</span>
-      <div class="mdl-layout-spacer"></div>
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
-                  mdl-textfield--floating-label mdl-textfield--align-right">
-        <label class="mdl-button mdl-js-button mdl-button--icon"
-               for="waterfall-exp">
-          <i class="material-icons">search</i>
-        </label>
-        <div class="mdl-textfield__expandable-holder">
-          <input class="mdl-textfield__input" type="text" name="sample"
-                 id="waterfall-exp">
-        </div>
-      </div>
+          <!-- Title -->
+          <span class="mdl-layout-title">Virtual Store</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+                    <i class="material-icons">search</i>
+                </label>
+                <div class="mdl-textfield__expandable md-36">
+                    <input class="mdl-textfield__input" type="text" name="sample" id="waterfall-exp">
+                </div>
+          </div>
+          <div class="mdl-layout-spacer"></div>
+          <i class="material-icons mdl-badge mdl-badge--overlap md-36" data-badge="100">add_shopping_cart</i>
+
     </div>
     <!-- Bottom row, not visible on scroll -->
     <div class="mdl-layout__header-row">
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+        <a id="arduino" class="mdl-navigation__link">Arduino</a>
+          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="arduino">
+                  <li class="mdl-menu__item">Placa</li>
+                  <li class="mdl-menu__item">Shield</li>
+                  <li class="mdl-menu__item">PIC</li>
+          </ul>
+        <a id="raspberry" class="mdl-navigation__link">Raspberry</a>
+          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="raspberry">
+                  <li class="mdl-menu__item">Placa</li>
+                  <li class="mdl-menu__item">Shield</li>
+                  <li class="mdl-menu__item">PIC</li>
+          </ul>
+        <a id="pic" class="mdl-navigation__link">PIC</a>
+          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="pic">
+                  <li class="mdl-menu__item">Placa</li>
+                  <li class="mdl-menu__item">Shield</li>
+                  <li class="mdl-menu__item">PIC</li>
+          </ul>
+        <a id="motores" class="mdl-navigation__link">Motores</a>
+          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="motores">
+                  <li class="mdl-menu__item">Servo</li>
+                  <li class="mdl-menu__item">Passo</li>
+                  <li class="mdl-menu__item">DC</li>
+          </ul>
+        <a id="ferramentas" class="mdl-navigation__link">Ferramentas</a>
+          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="ferramentas">
+                  <li class="mdl-menu__item">Medição</li>
+                  <li class="mdl-menu__item">Corte</li>
+                  <li class="mdl-menu__item">Jumpers</li>
+                  <li class="mdl-menu__item">Soldagem</li>
+                  <li class="mdl-menu__item">Protoboard</li>
+          </ul>
+        <a id="componentes" class="mdl-navigation__link">Componentes Eletrônicos</a>
+          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="componentes">
+                  <li class="mdl-menu__item">Resistores</li>
+                  <li class="mdl-menu__item">Reguladores</li>
+                  <li class="mdl-menu__item">Capacitores</li>
+                  <li class="mdl-menu__item">Transistores</li>
+                  <li class="mdl-menu__item">Circuitos Integrados</li>
+          </ul>
+        <a class="mdl-navigation__link">Display</a>
+        <a class="mdl-navigation__link">Comunicação</a>
+        <a class="mdl-navigation__link">Fontes</a>
+        <a class="mdl-navigation__link">Sensores</a>
       </nav>
     </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Title</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-      <a class="mdl-navigation__link" href="">Link</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content">
-        <div class="mdl-grid">
-
-        <div class="demo-card-square mdl-card mdl-shadow--2dp base">
-
-          <div class="mdl-card__title imagem">
-              <img src="http://www.minikits.com.au/image/cache/catalog/components/resistor3-500x500.jpg" alt="">
-          </div>
-          <div class="mdl-card__supporting-text descricao">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.
-          </div>
-          <div align="center" class="mdl-card__actions mdl-card--border botao">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored botao">Adicionar ao carrinho</button>
-          </div>
-        </div>
-
+    </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Categorias</span>
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+              <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+            <div class="mdl-grid">
                 <div class="demo-card-square mdl-card mdl-shadow--2dp base">
-
-          <div class="mdl-card__title imagem">
-              <img src="http://www.minikits.com.au/image/cache/catalog/components/resistor3-500x500.jpg" alt="">
-          </div>
-          <div class="mdl-card__supporting-text descricao">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.
-          </div>
-          <div align="center" class="mdl-card__actions mdl-card--border botao">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored botao">Adicionar ao carrinho</button>
-          </div>
+                      <div class="mdl-card__title imagem">
+                          <img src="http://www.minikits.com.au/image/cache/catalog/components/resistor3-500x500.jpg" alt="">
+                      </div>
+                      <div class="mdl-card__supporting-text descricao">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aenan convallis.
+                      </div>
+                      <div align="center" class="mdl-card__actions mdl-card--border botao">
+                          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored botao">Adicionar ao carrinho</button>
+                      </div>
+                </div>
+            </div>
         </div>
-
-                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
-
-          <div class="mdl-card__title imagem">
-              <img src="http://www.minikits.com.au/image/cache/catalog/components/resistor3-500x500.jpg" alt="">
-          </div>
-          <div class="mdl-card__supporting-text descricao">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.
-          </div>
-          <div align="center" class="mdl-card__actions mdl-card--border botao">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored botao">Adicionar ao carrinho</button>
-          </div>
-        </div>
-
-                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
-
-          <div class="mdl-card__title imagem">
-              <img src="http://www.minikits.com.au/image/cache/catalog/components/resistor3-500x500.jpg" alt="">
-          </div>
-          <div class="mdl-card__supporting-text descricao">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.
-          </div>
-          <div align="center" class="mdl-card__actions mdl-card--border botao">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored botao">Adicionar ao carrinho</button>
-          </div>
-        </div>
-
-                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
-
-          <div class="mdl-card__title imagem">
-              <img src="http://www.minikits.com.au/image/cache/catalog/components/resistor3-500x500.jpg" alt="">
-          </div>
-          <div class="mdl-card__supporting-text descricao">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.
-          </div>
-          <div align="center" class="mdl-card__actions mdl-card--border botao">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored botao">Adicionar ao carrinho</button>
-          </div>
-        </div>
-
-                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
-
-          <div class="mdl-card__title imagem">
-              <img src="http://www.minikits.com.au/image/cache/catalog/components/resistor3-500x500.jpg" alt="">
-          </div>
-          <div class="mdl-card__supporting-text descricao">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aenan convallis.
-          </div>
-          <div align="center" class="mdl-card__actions mdl-card--border botao">
-              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored botao">Adicionar ao carrinho</button>
-          </div>
-        </div>
-
-    </div>
-
-    </div>
-  </main>
+      </main>
 </div>
-
 </body>
+
 </html>
