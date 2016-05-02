@@ -4,13 +4,14 @@
 
 .base
 {
-  margin-left: 50px;
-  margin-top: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 200px;
+  height: 270px;
 }
 .imagem
 {
-  width: 150px;
-  height: 75px;
+
   margin-left: auto;
   margin-right: auto;
 
@@ -22,4 +23,5 @@ a
 }
 
 .md-36{font-size: 36px;}
-
+.valor {margin-top: 10px;}
+.fonte{font-size: 20px}

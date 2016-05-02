@@ -12,7 +12,7 @@
 </head>
 <body>
 <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header mdl-layout__header--waterfall">
+  <header class="mdl-layout__header">
     <!-- Top row, always visible -->
     <div class="mdl-layout__header-row">
           <!-- Title -->
@@ -27,7 +27,7 @@
                 </div>
           </div>
           <div class="mdl-layout-spacer"></div>
-          <i class="material-icons mdl-badge mdl-badge--overlap md-36" data-badge="100">add_shopping_cart</i>
+          <i class="material-icons mdl-badge mdl-badge--overlap md-36" data-badge="100">shopping_cart</i>
 
     </div>
     <!-- Bottom row, not visible on scroll -->
@@ -75,10 +75,10 @@
                   <li class="mdl-menu__item">Transistores</li>
                   <li class="mdl-menu__item">Circuitos Integrados</li>
           </ul>
-        <a class="mdl-navigation__link">Display</a>
-        <a class="mdl-navigation__link">Comunicação</a>
-        <a class="mdl-navigation__link">Fontes</a>
-        <a class="mdl-navigation__link">Sensores</a>
+        <a href="" class="mdl-navigation__link">Display</a>
+        <a href="" class="mdl-navigation__link">Comunicação</a>
+        <a href="" class="mdl-navigation__link">Fontes</a>
+        <a href="" class="mdl-navigation__link">Sensores</a>
       </nav>
     </div>
     </header>
@@ -91,26 +91,175 @@
               <a class="mdl-navigation__link" href="">Link</a>
             </nav>
       </div>
-      <main class="mdl-layout__content">
-        <div class="page-content">
+    <div class="mdl-layout__content" style="background-color: #fafafa">
+      <main>
+        <div class="page-content" style="padding-left: 60px">
             <div class="mdl-grid">
                 <div class="demo-card-square mdl-card mdl-shadow--2dp base">
                       <div class="mdl-card__title imagem">
-                          <img src="http://www.minikits.com.au/image/cache/catalog/components/resistor3-500x500.jpg" alt="">
+                          <img src="{% static 'imagens/prodSemFoto.jpg' %}" alt="">
                       </div>
-                      <div class="mdl-card__supporting-text descricao">
+                      <div class="mdl-card__supporting-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenan convallis.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Aenan convallis.
                       </div>
-                      <div align="center" class="mdl-card__actions mdl-card--border botao">
-                          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored botao">Adicionar ao carrinho</button>
+                      <div  align="center" class="mdl-card__actions mdl-card--border botao">
+                           <label class="mdl-typography--font-bold fonte">R$100,00</label>
+                          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon">
+                            <i href="" class="material-icons">add_shopping_cart</i>
+                          </button>
                       </div>
                 </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
+                      <div class="mdl-card__title imagem">
+                          <img src="{% static 'imagens/prodSemFoto.jpg' %}" alt="">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </div>
+                      <div  align="center" class="mdl-card__actions mdl-card--border botao">
+                           <label class="mdl-typography--font-bold fonte">R$100,00</label>
+                          <button class="mdl-button mdl-js-button  mdl-button--fab mdl-button--icon">
+                            <i href="" class="material-icons">add_shopping_cart</i>
+                          </button>
+                      </div>
+                </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
+                      <div class="mdl-card__title imagem">
+                          <img src="{% static 'imagens/prodSemFoto.jpg' %}" alt="">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </div>
+                      <div  align="center" class="mdl-card__actions mdl-card--border botao">
+                           <label class="mdl-typography--font-bold fonte">R$100,00</label>
+                          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon">
+                            <i href="" class="material-icons">add_shopping_cart</i>
+                          </button>
+                      </div>
+                </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
+                      <div class="mdl-card__title imagem">
+                          <img src="{% static 'imagens/prodSemFoto.jpg' %}" alt="">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </div>
+                      <div  align="center" class="mdl-card__actions mdl-card--border botao">
+                           <label class="mdl-typography--font-bold fonte">R$100,00</label>
+                          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon">
+                            <i href="" class="material-icons">add_shopping_cart</i>
+                          </button>
+                      </div>
+                </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
+                      <div class="mdl-card__title imagem">
+                          <img src="{% static 'imagens/prodSemFoto.jpg' %}" alt="">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </div>
+                      <div  align="center" class="mdl-card__actions mdl-card--border botao">
+                           <label class="mdl-typography--font-bold fonte">R$100,00</label>
+                          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon">
+                            <i href="" class="material-icons">add_shopping_cart</i>
+                          </button>
+                      </div>
+                </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
+                      <div class="mdl-card__title imagem">
+                          <img src="{% static 'imagens/prodSemFoto.jpg' %}" alt="">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </div>
+                      <div  align="center" class="mdl-card__actions mdl-card--border botao">
+                           <label class="mdl-typography--font-bold fonte">R$100,00</label>
+                          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon">
+                            <i href="" class="material-icons">add_shopping_cart</i>
+                          </button>
+                      </div>
+                </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
+                      <div class="mdl-card__title imagem">
+                          <img src="{% static 'imagens/prodSemFoto.jpg' %}" alt="">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </div>
+                      <div  align="center" class="mdl-card__actions mdl-card--border botao">
+                           <label class="mdl-typography--font-bold fonte">R$100,00</label>
+                          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon">
+                            <i href="" class="material-icons">add_shopping_cart</i>
+                          </button>
+                      </div>
+                </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
+                      <div class="mdl-card__title imagem">
+                          <img src="{% static 'imagens/prodSemFoto.jpg' %}" alt="">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </div>
+                      <div  align="center" class="mdl-card__actions mdl-card--border botao">
+                           <label class="mdl-typography--font-bold fonte">R$100,00</label>
+                          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon">
+                            <i href="" class="material-icons">add_shopping_cart</i>
+                          </button>
+                      </div>
+                </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
+                      <div class="mdl-card__title imagem">
+                          <img src="{% static 'imagens/prodSemFoto.jpg' %}" alt="">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </div>
+                      <div  align="center" class="mdl-card__actions mdl-card--border botao">
+                           <label class="mdl-typography--font-bold fonte">R$100,00</label>
+                          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon">
+                            <i href="" class="material-icons">add_shopping_cart</i>
+                          </button>
+                      </div>
+                </div>
+                <div class="demo-card-square mdl-card mdl-shadow--2dp base">
+                      <div class="mdl-card__title imagem">
+                          <img src="{% static 'imagens/prodSemFoto.jpg' %}" alt="">
+                      </div>
+                      <div class="mdl-card__supporting-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      </div>
+                      <div  align="center" class="mdl-card__actions mdl-card--border botao">
+                           <label class="mdl-typography--font-bold fonte">R$100,00</label>
+                          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--icon">
+                            <i href="" class="material-icons">add_shopping_cart</i>
+                          </button>
+                      </div>
+                </div>
+
             </div>
         </div>
+
       </main>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">Redes Sociais</div>
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href=""><img src="{% static 'icons/facebook.png' %}" alt=""></a></li>
+                    <li><a href=""><img src="{% static 'icons/linkedin.png' %}" alt=""></a></li>
+                    <li><a href=""><img src="{% static 'icons/twitter.png' %}" alt=""></a></li>
+                    <li><a href=""><img src="{% static 'icons/google-plus.png' %}" alt=""></a></li>
+                    <li><a href=""><img src="{% static 'icons/blogger.png' %}" alt=""></a></li>
+                        Telefone: XXXXX-XXXX
+                        WhatsApp: XXXXX-XXXX
+                        Telegram: XXXXX-XXXX <br>
+                        Email: virtialstore@gmail.com
+                </ul>
+          </div>
+        </footer>
+    </div>
+
 </div>
+
 </body>
 
 </html>
